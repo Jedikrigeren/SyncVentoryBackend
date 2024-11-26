@@ -7,6 +7,8 @@ export const handleGetExample = (req: Request): Response => {
       headers: {
         "content-type": "text/plain",
         "Access-Control-Allow-Origin": "*", // Allow all origins
+        "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type",
       },
     });
   };
